@@ -1,9 +1,10 @@
+import NavigationBar from "./Components/NavigationBar"
 
 
 function App() {
   return (
     <>
-      <h1 className="text-2xl text-red-800 font-bold">Hello barber shop</h1>
+      <NavigationBar/>
     </>
   )
 }
