@@ -14,7 +14,7 @@ function NavigationBar() {
   ]  
   return (
     <>
-    <div className='fixed top-0 w-full bg-black/40 h-[10vh] p-2 flex items-center z-10'>
+    <div className='fixed top-0 w-full h-[10vh] p-2 flex items-center z-10'>
        
       <div className='flex justify-between md:w-[80%] items-center mx-auto w-full'>
         <h1 className='text-4xl md:text-4xl font-bold text-white items-center'>Barber<span className='
@@ -24,13 +24,13 @@ function NavigationBar() {
         <div className='hidden md:flex gap-5 items-center'>
           {
             navLinks.map((items) => (
-              <a href={items.href} className='text-md text-gray-800 font-bold'>{items.name}</a>
+              <a href={items.href} className='text-md text-white font-bold'>{items.name}</a>
             ))
           }
           <button className='bg-white py-2 px-4 font-bold text-red-800 cursor-pointer rounded-md text-sm'>Signup</button>
         </div>
         {/* mobile button*/}
-        <div className='lg:hidden text-4xl font-bold text-white transition-all duration-300 ease-in'>
+        <div className='lg:hidden text-4xl font-bold text-white transition-all duration-300 ease-in z-5'>
           <div onClick={() => {setIsOpen(!isOpen)}}>
             {
                isOpen ? <FaTimes/> : <FaBars/>
@@ -40,7 +40,7 @@ function NavigationBar() {
       </div>
     </div>
     {/* mobile navigation */}
-    <div className={`top-23 md:hidden w-full h-[60vh] bg-white flex flex-col transition-all duration-300 ease-in absolute  ${isOpen ? 'left-0' : 'left-[-100%]'}`}>
+    <div className={`top-23 z-9 md:hidden w-full h-[60vh] bg-white flex flex-col transition-all duration-300 ease-in absolute  ${isOpen ? 'left-0' : 'left-[-100%]'}`}>
       <div className='flex flex-col gap-4 mt-20 ml-2 text-xl text-gray-800 font-bold'>
         {
           navLinks.map((item) => (
