@@ -1,3 +1,4 @@
+import About from "./Components/About"
 import Hero from "./Components/Hero"
 import NavigationBar from "./Components/NavigationBar"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavigationBar/>
       <Hero/>
+      <About/>
     </>
   )
 }

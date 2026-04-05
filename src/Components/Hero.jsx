@@ -64,19 +64,19 @@ function Hero() {
               <div className='flex gap-2'>
                  
                 <div className='flex flex-col'>
-                  <h3 className='font-bold text-xl text-white'>Expert Barbers</h3>
+                  <h3 className='font-bold text-xl text-white mb-2'>Expert Barbers</h3>
                   <p className='text-white text-sm'>Our skilled professionals deliver precision cuts, modern styles, and personalized grooming tailored to your look.</p>
                 </div>
               </div>
               <div className='flex gap-2'>
                 <div className='flex flex-col'>
-                  <h3 className='font-bold text-xl text-white'>Clean & Comfortable Environment</h3>
+                  <h3 className='font-bold text-xl text-white mb-2'>Clean & Comfortable Environment</h3>
                   <p className='text-white text-sm'>We maintain top hygiene standards and provide a relaxing, welcoming atmosphere for every client.</p>
                 </div>
               </div>
               <div className='flex gap-2'>
                 <div className='flex flex-col'>
-                  <h3 className='font-bold text-xl text-white'>Affordable & Reliable Service</h3>
+                  <h3 className='font-bold text-xl text-white mb-2'>Affordable & Reliable Service</h3>
                   <p className='text-white text-sm'>Enjoy high-quality haircuts at fair prices with consistent, dependable results every visit</p>
                 </div>
               </div>
