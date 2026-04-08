@@ -39,7 +39,7 @@ function Gallery() {
     <div className='py-20 bg-gray-50'>
         <div className='max-w-7xl md:w-[80%] mx-auto px-2'>
             <h1 className='text-4xl text-gray-800 font-extrabold text-center'>Gallery</h1>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-2 mt-3'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-2 mt-5'>
               {
                 imgs.map((item) => (
                   <img src={item.img} className='h-[200px] w-full' alt="" srcset="" />  
