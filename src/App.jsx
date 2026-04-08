@@ -1,4 +1,6 @@
 import About from "./Components/About"
+import Barbers from "./Components/Barbers"
+import Contact from "./Components/Contact"
 import Gallery from "./Components/Gallery"
 import Hero from "./Components/Hero"
 import NavigationBar from "./Components/NavigationBar"
@@ -15,6 +17,8 @@ function App() {
       <Services/>
       <Gallery/>
       <Testimonials/>
+      <Barbers/>
+      <Contact/>
     </>
   )
 }
