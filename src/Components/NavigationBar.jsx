@@ -70,7 +70,7 @@ function NavigationBar({activeBar, setActiveBar}) {
       <div className='flex flex-col gap-4 mt-20 ml-2 text-xl text-gray-800 font-bold'>
         {
           navLinks.map((item) => (
-            <a href={item.href}>{item.name}</a>
+            <a href={item.href} onClick={() => {setIsOpen(false)}}>{item.name}</a>
           ))
         }
       </div>
