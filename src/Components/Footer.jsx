@@ -3,7 +3,7 @@ import { FaCopyright, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 function Footer() {
   return (
-     <div className='py-20 bg-gray-900 text-white'>
+     <div className='py-20 bg-gray-900 text-white' id='footer'>
         <div className='max-w-7xl px-4 md:px-6 lg:px-8 mx-auto lg:w-[80%] w-full'>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-2'>
                 <div className='flex flex-col gap-2'>
@@ -47,7 +47,7 @@ function Footer() {
               <span className='flex items-center justify-center gap-2 text-gray-500 pt-10'>
                 <FaCopyright/>
                   <p className='text-gray-600 text-sm items-center'>
-                    {new Date().getFullYear()} FITELITE fitness center. All right reserved
+                    {new Date().getFullYear()} Barber shop. All right reserved
                 </p>
               </span>
             </div>

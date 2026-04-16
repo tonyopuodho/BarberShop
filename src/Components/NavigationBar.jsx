@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-scroll'
 
-function NavigationBar() {
+function NavigationBar({activeBar, setActiveBar}) {
   const [isOpen,setIsOpen] = useState(false)
   const [active,setActive] = useState(false)
   const navLinks = [
-    {name:"Home",href:"#home"},
-    {name:"About",href:"#about"},
-    {name:"Services",href:"#services"},
-    {name:"Gallery",href:"#gallary"},
-    {name:"Testimonials",href:"#testimonials"},
-    {name:"Barbers",href:"#barbers"},
-    {name:"Contact",href:"#contact"}
+    {name:"Home",href:"#home", id:"home"},
+    {name:"About",href:"#about", id:"about"},
+    {name:"Services",href:"#services", id:"services"},
+    {name:"Gallery",href:"#gallery", id:"gallery"},
+    {name:"Testimonials",href:"#testimonials", id:"testimonials"},
+    {name:"Barbers",href:"#barbers",id:"barbers"},
+    {name:"Contact",href:"#contact",id:"contact"}
   ]  
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +41,16 @@ function NavigationBar() {
         <div className='hidden md:flex gap-5 items-center'>
           {
             navLinks.map((items) => (
-              <a href={items.href} className={`text-md ${active ? 'text-gray-800': 'text-white'} font-bold`}>{items.name}</a>
+              <a href={items.href} className={`relative group transition-all duration-300 text-md ${activeBar == items.id ? active ? "text-red-600" : "text-white" : active 
+                            ? "text-gray-700 hover:text-red-600" : "text-gray-200 hover:text-white"
+                        } font-bold`}>
+                <Link to={items.id} spy={true} smooth={true} offset={50} duration={500} onClick={() => setActiveBar(items.id)}>{items.name}</Link>
+               <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-red-600
+                transition-all duration-300 transform origin-left scale-x-0 group-hover:scale-x-100
+                ${activeBar === items.id ? "scale-x-100" : ""}`}>                            
+              </span>
+              </a>
+              
             ))
           }
           <button className={`py-2 px-4 font-bold ${active ? 'text-white bg-red-600' : 'text-red-800 bg-white'} cursor-pointer rounded-md text-sm`}>Signup</button>

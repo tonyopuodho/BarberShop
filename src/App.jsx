@@ -1,3 +1,4 @@
+import { useState } from "react"
 import About from "./Components/About"
 import Barbers from "./Components/Barbers"
 import Contact from "./Components/Contact"
@@ -10,9 +11,10 @@ import Testimonials from "./Components/Testimonials"
 
 
 function App() {
+  const [activeBar,setActiveBar] = useState("home")
   return (
     <>
-      <NavigationBar/>
+      <NavigationBar activeBar={activeBar} setActiveBar={setActiveBar}/>
       <Hero/>
       <About/>
       <Services/>

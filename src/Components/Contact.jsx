@@ -4,7 +4,7 @@ import { FaLocationPinLock } from 'react-icons/fa6'
 
 function Contact() {
   return (
-     <div id='contacts' className='py-24 bg-white'>
+     <div id='contact' className='py-24 bg-white'>
         <div className='max-w-7xl px-4 md:px-6 lg:px-8 lg:w-[80%] mx-auto w-full'>
             <div className='text-center mb-6'>
                 <h1 className='text-3xl md:text-4xl text-gray-900 font-bold'>Contact Us</h1>

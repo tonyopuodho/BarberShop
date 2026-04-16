@@ -55,7 +55,7 @@ function Services() {
     }
   ]
   return (
-    <div className='py-16 bg-white/90'>
+    <div className='py-16 bg-white/90' id='services'>
         <div className='max-w-7xl md:w-[80%] mx-auto px-2'>
             <div className='flex justify-center flex-col items-center'>
                 <h1 className='text-center font-extrabold text-5xl'>Our services</h1>

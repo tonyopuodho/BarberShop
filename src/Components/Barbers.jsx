@@ -21,7 +21,7 @@ function Barbers() {
     },
   ]
   return (
-    <div className='py-20 bg-gray-100'>
+    <div className='py-20 bg-gray-100' id='barbers'>
       <div className='max-w-7xl md:w-[80%] mx-auto px-2'>
         <h1 className='text-gray-900 font-extrabold text-4xl text-center'>Meet our professional Barbers</h1>
         <div className='mt-8 grid grid-cols-1 md:grid-cols-3 gap-5'>
